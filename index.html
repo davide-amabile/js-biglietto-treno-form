@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>BIGLIETTERIA FORM</title>
+  </head>
+  <body>
+    <div class="big_ctn">
+      <h1>calcola il prezzo del tuo biglietto</h1>
+      <section>
+        <!-- tabella inserimento dati -->
+        <div class="dati_input">
+          <!-- riga form -->
+          <div class="row_input">
+            <div class="col">
+              <label for="nome">Nome e cognome</label>
+              <input id="name" type="text" name="nome" placeholder="Inserire il nome">
+            </div>
+            <div class="col">
+              <label for="km">Km da percorrere</label>
+              <input id="km" type="number" name="km" min="1" placeholder="Inserire i km">
+            </div>
+            <div class="col">
+              <label for="fascia_eta">Inserire la fascia d'et&agrave;</label>
+              <select id="range_eta" name="fascia eta">
+                <option  value="minorenne">Minnorenne</option>
+                <option  value="maggiorenne">Maggiorenne</option>
+                <option  value="over65">Over 65</option>
+              </select>
+            </div>
+          </div>
+          <!-- riga bottoni -->
+          <div class="row_btn">
+            <button id="genera" class="btn" type="button" name="button">genera</button>
+            <button id="annulla" class="btn" type="button" name="button">annulla</button>
+          </div>
+          <!-- riga bottoni -->
+        </div>
+      </section>
+      <!-- /tabella inserimento dati -->
+      <h2>il tuo biglietto</h2>
+      <!-- tabella dati inseriti -->
+      <!-- contenitore seconda sezione -->
+      <section>
+        <div id="ticket" class="ctn_inserimento">
+          <h3>dettaglio passeggiero</h3>
+          <!-- riga input inserite-->
+          <div class="row_inserimento">
+            <div class="nome_passeggiero">
+              <h3>nome passeggiero</h3>
+              <h3 id="name_passeggero"></h3>
+            </div>
+            <!-- tabella dati inseiti -->
+            <div class="dati_biglietto">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Offerta</th>
+                    <th>Carrozza</th>
+                    <th>Codice CP</th>
+                    <th>Costo biglietto</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td id="offerta"></td>
+                    <td id=carrozza></td>
+                    <td id="codice"></td>
+                    <td id="prezzo"></td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>

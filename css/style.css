@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #b91450;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* blocco inserimento dati input */
+
+.big_ctn {
+  width: 1200px;
+  margin: auto;
+}
+
+h1, h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #fff;
+  margin: 20px;
+}
+
+/* tabella inserimento dati */
+.dati_input {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* riga form */
+
+.row_input {
+  display: flex;
+  justify-content: center;
+}
+
+/* stile label e input */
+.col {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.col label {
+  padding-bottom: 10px;
+  color:  #b91450;
+  text-align: center;
+  font-size: 18px;
+}
+
+.col input, .col select {
+  border: 1px solid  #b91450;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 20px;
+  height: 30px;
+}
+
+/* focus input e select */
+
+.col input:focus, .col select:focus {
+  background-color:  #b91450;
+  color: #000;
+}
+
+/* riga e stile bottoni */
+
+.row_btn {
+  text-align: center;
+}
+
+.row_btn .btn {
+  background-color: 	lightgrey;
+  color: #b91450;
+  padding: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 17px;
+  border-radius: 3px;
+}
+
+.row_btn .btn:hover {
+  cursor: pointer;
+}
+
+/* tabella dati inseriti */
+.ctn_inserimento {
+  background-color: #fff;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+/* classe show per evento click genera */
+
+.show {
+  opacity: 1;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+.row_inserimento {
+  display: flex;
+}
+
+.nome_passeggiero {
+  background-color: #808080;
+  padding: 15px;
+}
+
+th, td {
+  padding: 15px;
+}
